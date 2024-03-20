@@ -1,0 +1,9 @@
+Soft Attention和Hard Attention
+
+我们常用的Attention即为Soft Attention，每个权重取值范围为[0,1]
+
+对于Hard Attention来说，每个key的注意力只会取0或者1，也就是说我们只会令某几个特定的key有注意力，且权重均为1。
+
+Global Attention和Local Attention
+
+一般不特殊说明的话，我们采用的Attention都是GlobalAttention。根据原始的Attention机制，每个解码时刻，并不限制解码状态的个数，而是可以动态适配编码器长度，从而匹配所有的编码器
